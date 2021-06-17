@@ -40,7 +40,7 @@ model.add(Dense(10, activation="softmax"))
 model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
 
 # Создаем лист с обратными связями для избежания черезменого обучения
-callbacks_list = [EarlyStopping(monitor='accuracy', patience=5, restore_best_weights=True),
+callbacks_list = [EarlyStopping(monitor='accuracy', patience=5, restore_best_weights=True)
                  ]
 
 
